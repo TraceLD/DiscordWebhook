@@ -38,7 +38,7 @@ services.AddHttpClient<IWebhookService, WebhookService>();
 ```cs
 public interface IHelloService
 {
-    Task SendHello();
+    Task SendHelloAsync();
 }
 
 public class HelloService : IHelloService
@@ -52,7 +52,7 @@ public class HelloService : IHelloService
         _webhookService = webhookService;
     }
 
-    public async Task SendHello()
+    public async Task SendHelloAsync()
     {
         await _webhookService.ExecuteWebhookAsync("Hello from C#");
     }
