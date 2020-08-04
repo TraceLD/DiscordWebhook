@@ -7,6 +7,7 @@
         <Version>1.0.1</Version>
         <Authors>TraceLD</Authors>
         <PackageDescription>Extremely simple and lightweight library for hooking up a Discord webhook meant for use with DI.</PackageDescription>
+        <PackageLicenseUrl>https://github.com/TraceLD/DiscordWebhook/blob/master/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/TraceLD/DiscordWebhook</RepositoryUrl>
     </PropertyGroup>
 

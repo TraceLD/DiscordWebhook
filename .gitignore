@@ -1,4 +1,5 @@
 .idea/
+nuget.config
 
 # User-specific files
 *.rsuser
