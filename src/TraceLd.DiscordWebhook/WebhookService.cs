@@ -6,12 +6,14 @@ using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Unicode;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 using TraceLd.DiscordWebhook.Models;
 
 namespace TraceLd.DiscordWebhook
 {
     public class WebhookService : IWebhookService
     {
+        private readonly ILogger<WebhookService> _logger;
         private readonly WebhookSettings _settings;
         private readonly HttpClient _client;
         private readonly JsonSerializerOptions _jsonSerializerOptions = new JsonSerializerOptions
@@ -23,6 +25,15 @@ namespace TraceLd.DiscordWebhook
         
         public WebhookService(HttpClient client, WebhookSettings settings)
         {
+            _settings = settings;
+            
+            client.BaseAddress = new Uri("https://discord.com/api/");
+            _client = client;
+        }
+
+        public WebhookService(ILogger<WebhookService> logger, HttpClient client, WebhookSettings settings)
+        {
+            _logger = logger;
             _settings = settings;
             
             client.BaseAddress = new Uri("https://discord.com/api/");
