@@ -32,7 +32,6 @@ namespace TraceLd.DiscordWebhook
         public async Task ExecuteWebhookAsync(WebhookMessage webhookMessage)
         {
             var json = JsonSerializer.Serialize(webhookMessage, _jsonSerializerOptions);
-            Console.WriteLine(json);
             var post = await _client
                 .PostAsync($"webhooks/{_settings.Id}/{_settings.Token}", new StringContent(json, Encoding.UTF8, "application/json"))
                 .ConfigureAwait(false);
