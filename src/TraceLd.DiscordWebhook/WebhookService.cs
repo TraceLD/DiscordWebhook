@@ -23,14 +23,6 @@ namespace TraceLd.DiscordWebhook
             Encoder = JavaScriptEncoder.Create(UnicodeRanges.All)
         };
         
-        public WebhookService(HttpClient client, WebhookSettings settings)
-        {
-            _settings = settings;
-            
-            client.BaseAddress = new Uri("https://discord.com/api/");
-            _client = client;
-        }
-
         public WebhookService(ILogger<WebhookService> logger, HttpClient client, WebhookSettings settings)
         {
             _logger = logger;
