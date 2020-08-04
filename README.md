@@ -5,6 +5,8 @@
 
 Extremely simple and lightweight library for hooking up a Discord webhook meant to be used with ASP.NET Core or the Generic Host.
 
+Built-in support for `Microsoft.Extensions.Logging`'s `ILogger<T>` (does not work without it, injected via DI) and embeds via `TraceLd.DiscordWebhook.Models.Embed`.
+
 ## Usage example
 
 The following example will use ASP.NET Core but the setup is almost identical with the Generic Host.
