@@ -3,6 +3,8 @@
 [![Actions Status](https://github.com/TraceLD/DiscordWebhook/workflows/build/badge.svg)](https://github.com/TraceLD/DiscordWebhook/actions)
 [![nuget](https://img.shields.io/nuget/v/TraceLd.DiscordWebhook)](https://www.nuget.org/packages/TraceLd.DiscordWebhook/)
 
+*Available as a NuGet package both on GitHub and nuget.org*
+
 Extremely simple and lightweight library for hooking up a Discord webhook meant to be used with ASP.NET Core or the Generic Host.
 
 Built-in support for `Microsoft.Extensions.Logging`'s `ILogger<T>` (does not work without it, injected via DI) and embeds via `TraceLd.DiscordWebhook.Models.Embed`.
