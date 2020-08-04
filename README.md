@@ -1,4 +1,8 @@
 # DiscordWebhook
+
+[![Actions Status](https://github.com/TraceLD/DiscordWebhook/workflows/build/badge.svg)](https://github.com/TraceLD/DiscordWebhook/actions)
+[![nuget](https://img.shields.io/nuget/v/TraceLd.DiscordWebhook)](https://www.nuget.org/packages/TraceLd.DiscordWebhook/)
+
 Extremely simple and lightweight library for hooking up a Discord webhook meant to be used with ASP.NET Core or the Generic Host.
 
 ## Usage example
