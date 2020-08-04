@@ -4,7 +4,7 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <Nullable>disable</Nullable>
         <PackageId>TraceLd.DiscordWebhook</PackageId>
-        <Version>1.0.3</Version>
+        <Version>1.0.4</Version>
         <Authors>TraceLD</Authors>
         <PackageDescription>Extremely simple and lightweight library for hooking up a Discord webhook meant for use with DI.</PackageDescription>
         <PackageLicenseUrl>https://github.com/TraceLD/DiscordWebhook/blob/master/LICENSE</PackageLicenseUrl>
