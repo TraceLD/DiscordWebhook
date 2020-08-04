@@ -10,7 +10,7 @@ using TraceLd.DiscordWebhook.Models;
 
 namespace TraceLd.DiscordWebhook
 {
-    public class WebhookService
+    public class WebhookService : IWebhookService
     {
         private readonly WebhookSettings _settings;
         private readonly HttpClient _client;

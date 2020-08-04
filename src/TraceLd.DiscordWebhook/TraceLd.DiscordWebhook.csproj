@@ -3,6 +3,11 @@
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <Nullable>disable</Nullable>
+        <PackageId>TraceLd.DiscordWebhook</PackageId>
+        <Version>1.0.1</Version>
+        <Authors>TraceLD</Authors>
+        <PackageDescription>Extremely simple and lightweight library for hooking up a Discord webhook meant for use with DI.</PackageDescription>
+        <RepositoryUrl>https://github.com/TraceLD/DiscordWebhook</RepositoryUrl>
     </PropertyGroup>
 
 </Project>
