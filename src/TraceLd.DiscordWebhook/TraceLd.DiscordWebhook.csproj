@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>net5.0</TargetFramework>
         <Nullable>disable</Nullable>
         <PackageId>TraceLd.DiscordWebhook</PackageId>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <Authors>TraceLD</Authors>
         <PackageDescription>Extremely simple and lightweight library for hooking up a Discord webhook meant for use with DI.</PackageDescription>
         <PackageLicenseUrl>https://github.com/TraceLD/DiscordWebhook/blob/master/LICENSE</PackageLicenseUrl>
