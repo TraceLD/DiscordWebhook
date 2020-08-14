@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace TraceLd.DiscordWebhook.Models
 {
@@ -13,8 +14,17 @@ namespace TraceLd.DiscordWebhook.Models
             Content = content;
             Embeds = embeds;
         }
-        
+
+        public string Username { get; set; } = null;
+
+        [JsonPropertyName("avatar_url")]
+        public string AvatarUrl { get; set; } = null;
+
+        [JsonPropertyName("tts")]
+        public bool TTS { get; set; } = false;
+
         public string Content { get; set; }
+
         public IEnumerable<Embed> Embeds { get; set; }
     }
 }

@@ -12,8 +12,9 @@ namespace TraceLd.DiscordWebhook.Models
         public long? Color { get; set; }
         public DateTime? Timestamp { get; set; }
         public Footer? Footer { get; set; }
-        public UrlEntity? Thumbnail { get; set; }
-        public UrlEntity? Image { get; set; }
+        public EmbedEntity? Thumbnail { get; set; }
+        public EmbedEntity? Image { get; set; }
+        public EmbedEntity? Video { get; set; }
         public Author? Author { get; set; }
         public IEnumerable<Field>? Fields { get; set; }
     }
