@@ -8,10 +8,15 @@ namespace TraceLd.DiscordWebhook.Models
         {
 
         }
-             
-        public Footer(string iconurl, string text)
+
+        public Footer(string text)
         {
-            IconUrl = iconurl;
+            Text = text;
+        }
+             
+        public Footer(string iconUrl, string text)
+        {
+            IconUrl = iconUrl;
             Text = text;
         }
 
