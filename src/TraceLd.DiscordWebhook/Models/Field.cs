@@ -17,6 +17,6 @@
 
         public string Value { get; set; }
 
-        public bool Inline { get; set; }
+        public bool? Inline { get; set; }
     }
 }
